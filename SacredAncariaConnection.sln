@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SacredAncariaConnectionClient", "SacredAncariaConnectionClient\SacredAncariaConnectionClient.csproj", "{2BAA4A6B-E0A7-44E9-98BE-5703A8589605}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SacredAncariaConnectionServer", "SacredAncariaConnectionServer\SacredAncariaConnectionServer.csproj", "{F06E766E-275C-46FD-BC5B-AEA23C67D2EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BAA4A6B-E0A7-44E9-98BE-5703A8589605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BAA4A6B-E0A7-44E9-98BE-5703A8589605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BAA4A6B-E0A7-44E9-98BE-5703A8589605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BAA4A6B-E0A7-44E9-98BE-5703A8589605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F06E766E-275C-46FD-BC5B-AEA23C67D2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06E766E-275C-46FD-BC5B-AEA23C67D2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06E766E-275C-46FD-BC5B-AEA23C67D2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06E766E-275C-46FD-BC5B-AEA23C67D2EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A724BD81-AF8B-46FB-AEDC-F32A6BEDD9BE}
+	EndGlobalSection
+EndGlobal
