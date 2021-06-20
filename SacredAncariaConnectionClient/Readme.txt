@@ -1,6 +1,8 @@
-Sacred Ancaria Connection
+Sacred Ancaria Connection - 1.0 (20-Jun-2021)
 
 If you want just to play, start this program before starting Sacred, be sure it connects to the SAC Network.
+Just be sure to set the ingame network speed option to MODEM / ISDN (in setting menu)
+
 If you want to host, please be sure to change Gameserver.cfg NETWORK_PORT_LISTEN to a different port: I advise 2006, to not conflict with NETWORK_PORT_TCP in Settings.cfg. These ports should reflect the settings in SAC Client, “Listening UDP Port” and “Broadcasting UDP Port in LAN”.
 Hosting via Sacred is not supported, please use dedicated server only.
 
@@ -25,3 +27,6 @@ Thanks to:
 Lain, for server hosting and general help.
 Eine Krone for the icon of the software.
 Kevin Prohn for making SacredLTI, which gave me inspiration for creating this software.
+
+Libraries used:
+DotNetZip, IPAddressCOntrol and Newtonsoft.Json

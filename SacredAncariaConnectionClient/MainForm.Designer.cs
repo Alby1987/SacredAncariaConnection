@@ -483,6 +483,7 @@ namespace SacredAncariaConnectionClient
             this.readme.Multiline = true;
             this.readme.Name = "readme";
             this.readme.ReadOnly = true;
+            this.readme.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.readme.Size = new System.Drawing.Size(740, 399);
             this.readme.TabIndex = 2;
             // 

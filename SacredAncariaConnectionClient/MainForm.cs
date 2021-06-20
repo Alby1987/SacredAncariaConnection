@@ -53,12 +53,16 @@ namespace SacredAncariaConnectionClient
 
         private string ReadReadme()
         {
-            if (!File.Exists("readme.txt"))
+            var thisDirectory = Application.StartupPath;
+            var foundFiles = Directory.EnumerateFiles(thisDirectory, "readme.txt");
+
+            var filename = foundFiles.SingleOrDefault();
+            if (filename == null)
             {
-                return "Missing readme.txt";
+                return "Error reading readme.txt";
             }
 
-            using (var readme = new StreamReader("readme.txt"))
+            using (var readme = new StreamReader(filename))
             {
                 return readme.ReadToEnd();
             }

@@ -4,11 +4,15 @@ namespace SacredAncariaConnectionServer.Services
 {
     public static class VersionManager
     {
-        public static readonly string LatestVersion = "0.3";
+        public static readonly string LatestVersion = "1.0";
         public static readonly string LatestVersionMessage = "You have the lastest version of SAC Client";
+
+        private static readonly string S2cm = "This version is expired, please go to SAC site at sac.s2cm.net to download the new version";
+
         public static readonly IReadOnlyDictionary<string, string> Versions = new Dictionary<string, string>
         {
-            { "0.2", "This version is expired, please go to SAC site at ... to download the new version" },
+            { "0.2", S2cm },
+            { "0.3", S2cm },
             { LatestVersion, LatestVersionMessage }
         };
 
