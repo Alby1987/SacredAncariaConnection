@@ -21,6 +21,7 @@ namespace SacredAncariaConnectionClient.Models
         internal int ServerPort { get; set; } = 2006;
         internal int ClientPort { get; set; } = 2005;
         internal bool BroadcastInLan { get; set; } = false;
+        internal bool Hosting { get; set; } = false;
         internal string UpdateMessage { get; set; } = "";
         internal string Motd { get; set; } = "";
         internal bool ToUpdate { get; set; } = false;
@@ -37,7 +38,8 @@ namespace SacredAncariaConnectionClient.Models
                     { nameof(ConfigurationEntries.IP_ADDRESS), Utils.ConvertIP(ForceIPAddress) },
                     { nameof(ConfigurationEntries.FORCE_ADDRESS), ForceIP.ToString() },
                     { nameof(ConfigurationEntries.SACSERVER_ADDRESS), SACServerAddress },
-                    { nameof(ConfigurationEntries.LAN_BROADCAST), BroadcastInLan.ToString() }
+                    { nameof(ConfigurationEntries.LAN_BROADCAST), BroadcastInLan.ToString() },
+                    { nameof(ConfigurationEntries.HOSTING), Hosting.ToString() }
                 };
             }
 
@@ -49,6 +51,7 @@ namespace SacredAncariaConnectionClient.Models
                 ForceIP = bool.Parse(value[nameof(ConfigurationEntries.FORCE_ADDRESS)]);
                 SACServerAddress = value[nameof(ConfigurationEntries.SACSERVER_ADDRESS)];
                 BroadcastInLan = bool.Parse(value[nameof(ConfigurationEntries.LAN_BROADCAST)]);
+                Hosting = bool.Parse(value[nameof(ConfigurationEntries.HOSTING)]);
             }
         }
 
@@ -70,6 +73,7 @@ namespace SacredAncariaConnectionClient.Models
         IP_ADDRESS,
         FORCE_ADDRESS,
         NETWORK_PORT_BROADCAST,
-        LAN_BROADCAST
+        LAN_BROADCAST,
+        HOSTING
     }
 }

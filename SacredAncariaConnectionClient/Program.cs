@@ -10,7 +10,7 @@ namespace SacredAncariaConnectionClient
 {
     static class Program
     {
-        internal static string Version = "1.0";
+        internal static string Version = "1.1";
         internal static LogConsole LogConsole = null;
 
         private static readonly AutoResetEvent _closing = new AutoResetEvent(false);

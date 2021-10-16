@@ -44,7 +44,9 @@ namespace SacredAncariaConnectionClient
             udpPort.Text = Context.ServerPort.ToString();
             broadcastingPort.Text = Context.ClientPort.ToString();
             broadcastInLan.Checked = Context.BroadcastInLan;
+            hostingActivate.Checked = Context.Hosting;
             apply.Enabled = false;
+            EnableHostingControls(Context.Hosting);
             Context.ServerPosted += OnServerPosted;
             Context.ServerReceived += OnServerReceived;
             sacAboutHeader.Text = $"SACRED ANCARIA CONNECTION - VERSION {Program.Version}";
@@ -235,12 +237,30 @@ namespace SacredAncariaConnectionClient
             _client.SetForceIP(forceIP.Checked);
             _client.SetBroadcastInLAN(broadcastInLan.Checked);
             _client.SetForcedIP(forcedServerIP.GetAddressBytes());
+            var hostingActive = hostingActivate.Checked;
+            _client.SetHosting(hostingActive);
+            EnableHostingControls(hostingActive);
+        }
+
+        private void EnableHostingControls(bool enabled)
+        {
+            forcedServerIP.Enabled = enabled;
+            udpPort.Enabled = enabled;
+            broadcastingPort.Enabled = enabled;
+            broadcastInLan.Enabled = enabled;
+            myServerList.Enabled = enabled;
+            forceIP.Enabled = enabled;
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Context.ServerPosted -= OnServerPosted;
             Context.ServerReceived -= OnServerReceived;
+        }
+
+        private void hostingActivate_CheckedChanged(object sender, EventArgs e)
+        {
+            apply.Enabled = true;
         }
     }
 }

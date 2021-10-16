@@ -51,6 +51,11 @@ namespace SacredAncariaConnectionClient.Controller
             _context.BroadcastInLan = broadcastInLAN;
         }
 
+        internal void SetHosting(bool hosting)
+        {
+            _context.Hosting = hosting;
+        }
+
         internal void SetForceIP(bool forceip)
         {
             _context.ForceIP = forceip;

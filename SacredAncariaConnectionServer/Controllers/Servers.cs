@@ -7,6 +7,7 @@ namespace SacredAncariaConnectionServer.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [ResponseCache(NoStore = true, Duration = 0, Location = ResponseCacheLocation.None)]
     public class Servers : ControllerBase
     {
         [HttpGet("{version}")]

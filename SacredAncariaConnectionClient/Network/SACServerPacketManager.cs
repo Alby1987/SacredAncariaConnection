@@ -46,7 +46,7 @@ namespace SacredAncariaConnectionClient.Network
                     await _sacServerCommunication.RemoveServers(serversToRemoveArray);
                 }
 
-                if (_context.MyServers.Count != 0)
+                if (_context.MyServers.Count != 0 && _context.Hosting)
                 {
                     var response = await _sacServerCommunication.PostServers(_context.MyServers.Values.Select(x => x.server).ToArray());
                     if (response != null)

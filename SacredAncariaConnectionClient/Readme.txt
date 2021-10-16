@@ -1,4 +1,4 @@
-Sacred Ancaria Connection - 1.0 (20-Jun-2021)
+Sacred Ancaria Connection - 1.1 (16-Oct-2021)
 
 If you want just to play, start this program before starting Sacred, be sure it connects to the SAC Network.
 Just be sure to set the ingame network speed option to MODEM / ISDN (in setting menu)
@@ -7,11 +7,12 @@ If you want to host, please be sure to change Gameserver.cfg NETWORK_PORT_LISTEN
 Hosting via Sacred is not supported, please use dedicated server only.
 
 Here is a quick guide of the host tab:
+- “Host Servers” enable you to host game servers. This is useful if you are connecting to a VPN to play and still having SAC client open. 
 - “Autodetected Server IP” should show your real public IP. If this is not your real public IP, please write it in the “Force Server IP”, click on “Force IP” checkbox, then click Apply.
 - “Listening UDP Port” indicates the UPD port SAC is listening for Gameserver info. It should match NETWORK_PORT_LISTEN in Gameserver.cfg.
 - “Broadcasting UDP Port in LAN” broadcast the server in your host also in LAN (as the original network system). Useful if you want to mix LAN players and internet players.
 - Command line parameters
-- “Headless”: start the SAC Client in headless mode, using the console as primary output. Modify SacredAncariaConnectionClient.cfg (created after first start) do modify the SAC options.
+- “Headless”: start the SAC Client in headless mode, using the console as primary output. Modify SacredAncariaConnectionClient.cfg (created after first start) do modify the SAC options. Remember to put HOSTING to true.
 - “Filelog”: write the console output to “SacredAncariaConnectionClient.log”
 - “None”: SAC does not write anything in console
 - “Debug”: SAC writes a lot of output (do not use in production)

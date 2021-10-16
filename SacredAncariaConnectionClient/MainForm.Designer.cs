@@ -71,6 +71,8 @@ namespace SacredAncariaConnectionClient
             this.sacAboutHeader = new System.Windows.Forms.Label();
             this.motd = new System.Windows.Forms.Label();
             this.readme = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.hostingActivate = new System.Windows.Forms.CheckBox();
             this.mainTabs.SuspendLayout();
             this.serverList.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -205,21 +207,23 @@ namespace SacredAncariaConnectionClient
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.forceIP, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.forcedServerIP, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.autodectedIpAddress, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.udpPort, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.broadcastingPort, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.broadcastInLan, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.myServerList, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.apply, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.forceIP, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.forcedServerIP, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.autodectedIpAddress, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.udpPort, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.broadcastingPort, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label11, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.broadcastInLan, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.myServerList, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.apply, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.hostingActivate, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -233,7 +237,7 @@ namespace SacredAncariaConnectionClient
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(3, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 13);
             this.label1.TabIndex = 0;
@@ -242,7 +246,7 @@ namespace SacredAncariaConnectionClient
             // forceIP
             // 
             this.forceIP.AutoSize = true;
-            this.forceIP.Location = new System.Drawing.Point(495, 29);
+            this.forceIP.Location = new System.Drawing.Point(495, 52);
             this.forceIP.Name = "forceIP";
             this.forceIP.Size = new System.Drawing.Size(66, 17);
             this.forceIP.TabIndex = 2;
@@ -253,7 +257,7 @@ namespace SacredAncariaConnectionClient
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 26);
+            this.label2.Location = new System.Drawing.Point(3, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 13);
             this.label2.TabIndex = 2;
@@ -266,7 +270,7 @@ namespace SacredAncariaConnectionClient
             this.forcedServerIP.BackColor = System.Drawing.SystemColors.Window;
             this.forcedServerIP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.forcedServerIP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.forcedServerIP.Location = new System.Drawing.Point(249, 29);
+            this.forcedServerIP.Location = new System.Drawing.Point(249, 52);
             this.forcedServerIP.MinimumSize = new System.Drawing.Size(87, 20);
             this.forcedServerIP.Name = "forcedServerIP";
             this.forcedServerIP.ReadOnly = false;
@@ -282,7 +286,7 @@ namespace SacredAncariaConnectionClient
             this.autodectedIpAddress.BackColor = System.Drawing.SystemColors.Window;
             this.autodectedIpAddress.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.autodectedIpAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.autodectedIpAddress.Location = new System.Drawing.Point(249, 3);
+            this.autodectedIpAddress.Location = new System.Drawing.Point(249, 26);
             this.autodectedIpAddress.MinimumSize = new System.Drawing.Size(87, 20);
             this.autodectedIpAddress.Name = "autodectedIpAddress";
             this.autodectedIpAddress.ReadOnly = true;
@@ -293,7 +297,7 @@ namespace SacredAncariaConnectionClient
             // 
             // udpPort
             // 
-            this.udpPort.Location = new System.Drawing.Point(249, 55);
+            this.udpPort.Location = new System.Drawing.Point(249, 78);
             this.udpPort.Name = "udpPort";
             this.udpPort.Size = new System.Drawing.Size(240, 20);
             this.udpPort.TabIndex = 4;
@@ -302,7 +306,7 @@ namespace SacredAncariaConnectionClient
             // 
             // broadcastingPort
             // 
-            this.broadcastingPort.Location = new System.Drawing.Point(249, 81);
+            this.broadcastingPort.Location = new System.Drawing.Point(249, 104);
             this.broadcastingPort.Name = "broadcastingPort";
             this.broadcastingPort.Size = new System.Drawing.Size(240, 20);
             this.broadcastingPort.TabIndex = 29;
@@ -312,7 +316,7 @@ namespace SacredAncariaConnectionClient
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 52);
+            this.label9.Location = new System.Drawing.Point(3, 75);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 13);
             this.label9.TabIndex = 22;
@@ -321,7 +325,7 @@ namespace SacredAncariaConnectionClient
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 78);
+            this.label11.Location = new System.Drawing.Point(3, 101);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(152, 13);
             this.label11.TabIndex = 28;
@@ -330,7 +334,7 @@ namespace SacredAncariaConnectionClient
             // broadcastInLan
             // 
             this.broadcastInLan.AutoSize = true;
-            this.broadcastInLan.Location = new System.Drawing.Point(495, 81);
+            this.broadcastInLan.Location = new System.Drawing.Point(495, 104);
             this.broadcastInLan.Name = "broadcastInLan";
             this.broadcastInLan.Size = new System.Drawing.Size(109, 17);
             this.broadcastInLan.TabIndex = 27;
@@ -356,9 +360,9 @@ namespace SacredAncariaConnectionClient
             this.myPassword});
             this.tableLayoutPanel1.SetColumnSpan(this.myServerList, 3);
             this.myServerList.HideSelection = false;
-            this.myServerList.Location = new System.Drawing.Point(3, 136);
+            this.myServerList.Location = new System.Drawing.Point(3, 159);
             this.myServerList.Name = "myServerList";
-            this.myServerList.Size = new System.Drawing.Size(734, 360);
+            this.myServerList.Size = new System.Drawing.Size(734, 337);
             this.myServerList.TabIndex = 30;
             this.myServerList.UseCompatibleStateImageBehavior = false;
             this.myServerList.View = System.Windows.Forms.View.Details;
@@ -416,7 +420,7 @@ namespace SacredAncariaConnectionClient
             // apply
             // 
             this.apply.Enabled = false;
-            this.apply.Location = new System.Drawing.Point(249, 107);
+            this.apply.Location = new System.Drawing.Point(249, 130);
             this.apply.Name = "apply";
             this.apply.Size = new System.Drawing.Size(75, 23);
             this.apply.TabIndex = 31;
@@ -487,6 +491,26 @@ namespace SacredAncariaConnectionClient
             this.readme.Size = new System.Drawing.Size(740, 399);
             this.readme.TabIndex = 2;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "Hosting:";
+            // 
+            // hostingActivate
+            // 
+            this.hostingActivate.AutoSize = true;
+            this.hostingActivate.Location = new System.Drawing.Point(249, 3);
+            this.hostingActivate.Name = "hostingActivate";
+            this.hostingActivate.Size = new System.Drawing.Size(87, 17);
+            this.hostingActivate.TabIndex = 33;
+            this.hostingActivate.Text = "Host Servers";
+            this.hostingActivate.UseVisualStyleBackColor = true;
+            this.hostingActivate.CheckedChanged += new System.EventHandler(this.hostingActivate_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -556,6 +580,8 @@ namespace SacredAncariaConnectionClient
         private System.Windows.Forms.Label sacAboutHeader;
         private System.Windows.Forms.Label motd;
         private System.Windows.Forms.TextBox readme;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox hostingActivate;
     }
 }
 
